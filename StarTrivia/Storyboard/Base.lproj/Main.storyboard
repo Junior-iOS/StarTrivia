@@ -661,7 +661,7 @@
                                     <constraint firstItem="QGi-M7-902" firstAttribute="leading" secondItem="CD1-Gg-Tzh" secondAttribute="leading" constant="20" id="sHl-sK-eih"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evt-A3-I54">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evt-A3-I54" customClass="FadeEnabledButton" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="603" width="107" height="44"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
                                 <state key="normal" title="previous">
@@ -671,7 +671,7 @@
                                     <action selector="previousClicked:" destination="o5C-Mh-plR" eventType="touchUpInside" id="qRG-fK-nVM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-5D-SAi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-5D-SAi" customClass="FadeEnabledButton" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="300" y="603" width="55" height="44"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="20"/>
                                 <state key="normal" title="next">
