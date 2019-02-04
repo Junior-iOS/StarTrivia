@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AD84DE2206AD1B006BFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */; };
+		14AD84E02206AD1B006BFE70 /* SelectPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */; };
+		14AD84E32206AD1B006BFE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84E12206AD1B006BFE70 /* Main.storyboard */; };
+		14AD84E52206AD23006BFE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84E42206AD23006BFE70 /* Assets.xcassets */; };
+		14AD84E82206AD23006BFE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84E62206AD23006BFE70 /* LaunchScreen.storyboard */; };
+		14AD84F52206AFC6006BFE70 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84F32206AFC5006BFE70 /* Starjhol.ttf */; };
+		14AD84F62206AFC6006BFE70 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84F42206AFC6006BFE70 /* Starjedi.ttf */; };
+		14AD84F82206AFD2006BFE70 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84F72206AFD2006BFE70 /* Starjout.ttf */; };
+		14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84FA2206B5EF006BFE70 /* BlackBackgroundView.swift */; };
+		14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84FD2206B6A1006BFE70 /* Constants.swift */; };
+		14AD85012206C26F006BFE70 /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85002206C26F006BFE70 /* PersonAPI.swift */; };
+		14AD85032206C659006BFE70 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85022206C659006BFE70 /* Person.swift */; };
+		14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C252207995000AA8399 /* FadeEnabledButton.swift */; };
+		14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */; };
+		14DC3C2A22079DC400AA8399 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2922079DC400AA8399 /* VehiclesViewController.swift */; };
+		14DC3C2C22079DCE00AA8399 /* StarshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2B22079DCD00AA8399 /* StarshipsViewController.swift */; };
+		14DC3C2E22079DD800AA8399 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2D22079DD800AA8399 /* FilmsViewController.swift */; };
+		14DC3C302207B33900AA8399 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2F2207B33900AA8399 /* Homeworld.swift */; };
+		14DC3C322207B3A400AA8399 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */; };
+		14DC3C342207C53800AA8399 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C332207C53800AA8399 /* Vehicle.swift */; };
+		14DC3C362207C68200AA8399 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C352207C68200AA8399 /* VehicleAPI.swift */; };
+		8C4D09267B5F79F6BDC0ECFA /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0FF8A2113C1FA95C74CC11 /* Pods_StarTrivia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14AD84DA2206AD1B006BFE70 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonViewController.swift; sourceTree = "<group>"; };
+		14AD84E22206AD1B006BFE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14AD84E42206AD23006BFE70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14AD84E72206AD23006BFE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14AD84E92206AD23006BFE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AD84F32206AFC5006BFE70 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		14AD84F42206AFC6006BFE70 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		14AD84F72206AFD2006BFE70 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		14AD84FA2206B5EF006BFE70 /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
+		14AD84FD2206B6A1006BFE70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14AD85002206C26F006BFE70 /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		14AD85022206C659006BFE70 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		14DC3C252207995000AA8399 /* FadeEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledButton.swift; sourceTree = "<group>"; };
+		14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldViewController.swift; sourceTree = "<group>"; };
+		14DC3C2922079DC400AA8399 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		14DC3C2B22079DCD00AA8399 /* StarshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewController.swift; sourceTree = "<group>"; };
+		14DC3C2D22079DD800AA8399 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		14DC3C2F2207B33900AA8399 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
+		14DC3C332207C53800AA8399 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		14DC3C352207C68200AA8399 /* VehicleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
+		18CCD806CE2383AE512B05A0 /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
+		6F0FF8A2113C1FA95C74CC11 /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CC14574AECFA66B2C615E2 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14AD84D72206AD1B006BFE70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4D09267B5F79F6BDC0ECFA /* Pods_StarTrivia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AD84D12206AD1B006BFE70 = {
+			isa = PBXGroup;
+			children = (
+				14AD84DC2206AD1B006BFE70 /* StarTrivia */,
+				14AD84DB2206AD1B006BFE70 /* Products */,
+				D9D688B7E20FCBE7A786BAD6 /* Pods */,
+				DFEFBE21259CF86A50575A0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14AD84DB2206AD1B006BFE70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84DA2206AD1B006BFE70 /* StarTrivia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14AD84DC2206AD1B006BFE70 /* StarTrivia */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84F02206AD68006BFE70 /* Storyboard */,
+				14AD84F92206AFD8006BFE70 /* Fonts */,
+				14AD84FC2206B68C006BFE70 /* Utils */,
+				14AD84FF2206C253006BFE70 /* Services */,
+				14AD84F22206AD78006BFE70 /* Model */,
+				14AD84F12206AD72006BFE70 /* View */,
+				14AD84EF2206AD5C006BFE70 /* Controller */,
+				14AD84E42206AD23006BFE70 /* Assets.xcassets */,
+				14AD84E92206AD23006BFE70 /* Info.plist */,
+			);
+			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		14AD84EF2206AD5C006BFE70 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */,
+				14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */,
+				14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */,
+				14DC3C2922079DC400AA8399 /* VehiclesViewController.swift */,
+				14DC3C2B22079DCD00AA8399 /* StarshipsViewController.swift */,
+				14DC3C2D22079DD800AA8399 /* FilmsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14AD84F02206AD68006BFE70 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84E12206AD1B006BFE70 /* Main.storyboard */,
+				14AD84E62206AD23006BFE70 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		14AD84F12206AD72006BFE70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84FA2206B5EF006BFE70 /* BlackBackgroundView.swift */,
+				14DC3C252207995000AA8399 /* FadeEnabledButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14AD84F22206AD78006BFE70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14AD85022206C659006BFE70 /* Person.swift */,
+				14DC3C2F2207B33900AA8399 /* Homeworld.swift */,
+				14DC3C332207C53800AA8399 /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14AD84F92206AFD8006BFE70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84F42206AFC6006BFE70 /* Starjedi.ttf */,
+				14AD84F32206AFC5006BFE70 /* Starjhol.ttf */,
+				14AD84F72206AFD2006BFE70 /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		14AD84FC2206B68C006BFE70 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14AD84FD2206B6A1006BFE70 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14AD84FF2206C253006BFE70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14AD85002206C26F006BFE70 /* PersonAPI.swift */,
+				14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */,
+				14DC3C352207C68200AA8399 /* VehicleAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D9D688B7E20FCBE7A786BAD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91CC14574AECFA66B2C615E2 /* Pods-StarTrivia.debug.xcconfig */,
+				18CCD806CE2383AE512B05A0 /* Pods-StarTrivia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFEFBE21259CF86A50575A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F0FF8A2113C1FA95C74CC11 /* Pods_StarTrivia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14AD84D92206AD1B006BFE70 /* StarTrivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AD84EC2206AD23006BFE70 /* Build configuration list for PBXNativeTarget "StarTrivia" */;
+			buildPhases = (
+				D8C04F5A27CEEB9DC2C30D7A /* [CP] Check Pods Manifest.lock */,
+				14AD84D62206AD1B006BFE70 /* Sources */,
+				14AD84D72206AD1B006BFE70 /* Frameworks */,
+				14AD84D82206AD1B006BFE70 /* Resources */,
+				120ECDA4AFF16FC4F880C95E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarTrivia;
+			productName = StarTrivia;
+			productReference = 14AD84DA2206AD1B006BFE70 /* StarTrivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14AD84D22206AD1B006BFE70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Junior Silva";
+				TargetAttributes = {
+					14AD84D92206AD1B006BFE70 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 14AD84D52206AD1B006BFE70 /* Build configuration list for PBXProject "StarTrivia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14AD84D12206AD1B006BFE70;
+			productRefGroup = 14AD84DB2206AD1B006BFE70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14AD84D92206AD1B006BFE70 /* StarTrivia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AD84D82206AD1B006BFE70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AD84E82206AD23006BFE70 /* LaunchScreen.storyboard in Resources */,
+				14AD84E52206AD23006BFE70 /* Assets.xcassets in Resources */,
+				14AD84E32206AD1B006BFE70 /* Main.storyboard in Resources */,
+				14AD84F62206AFC6006BFE70 /* Starjedi.ttf in Resources */,
+				14AD84F82206AFD2006BFE70 /* Starjout.ttf in Resources */,
+				14AD84F52206AFC6006BFE70 /* Starjhol.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		120ECDA4AFF16FC4F880C95E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C04F5A27CEEB9DC2C30D7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarTrivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14AD84D62206AD1B006BFE70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DC3C2A22079DC400AA8399 /* VehiclesViewController.swift in Sources */,
+				14DC3C362207C68200AA8399 /* VehicleAPI.swift in Sources */,
+				14DC3C322207B3A400AA8399 /* HomeworldAPI.swift in Sources */,
+				14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */,
+				14AD85032206C659006BFE70 /* Person.swift in Sources */,
+				14DC3C342207C53800AA8399 /* Vehicle.swift in Sources */,
+				14DC3C2E22079DD800AA8399 /* FilmsViewController.swift in Sources */,
+				14AD84E02206AD1B006BFE70 /* SelectPersonViewController.swift in Sources */,
+				14AD84DE2206AD1B006BFE70 /* AppDelegate.swift in Sources */,
+				14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */,
+				14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */,
+				14DC3C302207B33900AA8399 /* Homeworld.swift in Sources */,
+				14AD85012206C26F006BFE70 /* PersonAPI.swift in Sources */,
+				14DC3C2C22079DCE00AA8399 /* StarshipsViewController.swift in Sources */,
+				14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14AD84E12206AD1B006BFE70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AD84E22206AD1B006BFE70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14AD84E62206AD23006BFE70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AD84E72206AD23006BFE70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14AD84EA2206AD23006BFE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14AD84EB2206AD23006BFE70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14AD84ED2206AD23006BFE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91CC14574AECFA66B2C615E2 /* Pods-StarTrivia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XE5D529J6R;
+				INFOPLIST_FILE = StarTrivia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.njdevelopment.StarTrivia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14AD84EE2206AD23006BFE70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18CCD806CE2383AE512B05A0 /* Pods-StarTrivia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XE5D529J6R;
+				INFOPLIST_FILE = StarTrivia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.njdevelopment.StarTrivia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14AD84D52206AD1B006BFE70 /* Build configuration list for PBXProject "StarTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AD84EA2206AD23006BFE70 /* Debug */,
+				14AD84EB2206AD23006BFE70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AD84EC2206AD23006BFE70 /* Build configuration list for PBXNativeTarget "StarTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AD84ED2206AD23006BFE70 /* Debug */,
+				14AD84EE2206AD23006BFE70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14AD84D22206AD1B006BFE70 /* Project object */;
+}
