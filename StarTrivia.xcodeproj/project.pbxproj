@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144046F822091AD800AA2E3D /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144046F722091AD800AA2E3D /* Starship.swift */; };
+		144046FA22091D5D00AA2E3D /* StarshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144046F922091D5D00AA2E3D /* StarshipAPI.swift */; };
 		14AD84DE2206AD1B006BFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */; };
 		14AD84E02206AD1B006BFE70 /* SelectPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */; };
 		14AD84E32206AD1B006BFE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84E12206AD1B006BFE70 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		144046F722091AD800AA2E3D /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		144046F922091D5D00AA2E3D /* StarshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipAPI.swift; sourceTree = "<group>"; };
 		14AD84DA2206AD1B006BFE70 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				14AD85022206C659006BFE70 /* Person.swift */,
 				14DC3C2F2207B33900AA8399 /* Homeworld.swift */,
 				14DC3C332207C53800AA8399 /* Vehicle.swift */,
+				144046F722091AD800AA2E3D /* Starship.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				14AD85002206C26F006BFE70 /* PersonAPI.swift */,
 				14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */,
 				14DC3C352207C68200AA8399 /* VehicleAPI.swift */,
+				144046F922091D5D00AA2E3D /* StarshipAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -314,8 +320,10 @@
 				14DC3C322207B3A400AA8399 /* HomeworldAPI.swift in Sources */,
 				14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */,
 				14AD85032206C659006BFE70 /* Person.swift in Sources */,
+				144046FA22091D5D00AA2E3D /* StarshipAPI.swift in Sources */,
 				14DC3C342207C53800AA8399 /* Vehicle.swift in Sources */,
 				14DC3C2E22079DD800AA8399 /* FilmsViewController.swift in Sources */,
+				144046F822091AD800AA2E3D /* Starship.swift in Sources */,
 				14AD84E02206AD1B006BFE70 /* SelectPersonViewController.swift in Sources */,
 				14AD84DE2206AD1B006BFE70 /* AppDelegate.swift in Sources */,
 				14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */,

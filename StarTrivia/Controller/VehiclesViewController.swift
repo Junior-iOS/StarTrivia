@@ -32,11 +32,13 @@ class VehiclesViewController: UIViewController, PersonProtocol {
         super.viewDidLoad()
 
         setupVehicles()
-        setButtonState()
     }
     
     fileprivate func setupVehicles() {
         vehicles = person.vehicleUlrs
+        btnNext.isEnabled = vehicles.count > 1
+        btnPrevious.isEnabled = false
+        
         guard let firstVehicle = vehicles.first else { return }
         getVehicle(url: firstVehicle)
     }
@@ -72,9 +74,6 @@ class VehiclesViewController: UIViewController, PersonProtocol {
     }
     
     func setButtonState() {
-        btnNext.isEnabled = vehicles.count > 1
-        btnPrevious.isEnabled = false
-        
         btnPrevious.isEnabled = currentVehicle == 0 ? false : true
         btnNext.isEnabled = currentVehicle == vehicles.count - 1 ? false : true
         getVehicle(url: vehicles[currentVehicle])
