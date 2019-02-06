@@ -21,17 +21,41 @@ class FilmsViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: FadeEnabledButton!
     
     var person: Person!
+    var api = Interactor<Film>()
     var films = [String]()
     var currentFilm = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        setupFilms()
+        setButtonState()
+    }
+    
+    func setupFilms() {
+        films = person.filmUlrs
+        btnPrevious.isEnabled = false
+        btnNext.isEnabled = films.count > 0
+        guard let firstFilm = films.first else { return }
+        getFilm(url: firstFilm)
     }
     
     fileprivate func getFilm(url: String) {
-        
+        guard let url = URL(string: url) else { return }
+        api.fetchModel(url: url) { (film) in
+            if let film = film {
+                self.setupView(with: film)
+            }
+        }
+    }
+    
+    func setupView(with film: Film) {
+        lblTitle.text = film.title
+        lblEpisode.text = "\(film.episode)"
+        lblDirector.text = film.director
+        lblProducer.text = film.producer
+        lblReleased.text = film.release
+        txtOpening.text = film.opening
     }
     
     @IBAction func previousClicked(_ sender: FadeEnabledButton) {

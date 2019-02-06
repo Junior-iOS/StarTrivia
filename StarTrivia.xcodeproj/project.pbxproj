@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		144046F822091AD800AA2E3D /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144046F722091AD800AA2E3D /* Starship.swift */; };
-		144046FA22091D5D00AA2E3D /* StarshipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144046F922091D5D00AA2E3D /* StarshipAPI.swift */; };
 		144046FC2209262E00AA2E3D /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144046FB2209262E00AA2E3D /* Film.swift */; };
 		14AD84DE2206AD1B006BFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */; };
 		14AD84E02206AD1B006BFE70 /* SelectPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84DF2206AD1B006BFE70 /* SelectPersonViewController.swift */; };
@@ -20,7 +19,7 @@
 		14AD84F82206AFD2006BFE70 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14AD84F72206AFD2006BFE70 /* Starjout.ttf */; };
 		14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84FA2206B5EF006BFE70 /* BlackBackgroundView.swift */; };
 		14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84FD2206B6A1006BFE70 /* Constants.swift */; };
-		14AD85012206C26F006BFE70 /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85002206C26F006BFE70 /* PersonAPI.swift */; };
+		14AD85012206C26F006BFE70 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85002206C26F006BFE70 /* Interactor.swift */; };
 		14AD85032206C659006BFE70 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85022206C659006BFE70 /* Person.swift */; };
 		14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C252207995000AA8399 /* FadeEnabledButton.swift */; };
 		14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */; };
@@ -28,15 +27,12 @@
 		14DC3C2C22079DCE00AA8399 /* StarshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2B22079DCD00AA8399 /* StarshipsViewController.swift */; };
 		14DC3C2E22079DD800AA8399 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2D22079DD800AA8399 /* FilmsViewController.swift */; };
 		14DC3C302207B33900AA8399 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2F2207B33900AA8399 /* Homeworld.swift */; };
-		14DC3C322207B3A400AA8399 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */; };
 		14DC3C342207C53800AA8399 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C332207C53800AA8399 /* Vehicle.swift */; };
-		14DC3C362207C68200AA8399 /* VehicleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C352207C68200AA8399 /* VehicleAPI.swift */; };
 		8C4D09267B5F79F6BDC0ECFA /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0FF8A2113C1FA95C74CC11 /* Pods_StarTrivia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		144046F722091AD800AA2E3D /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
-		144046F922091D5D00AA2E3D /* StarshipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipAPI.swift; sourceTree = "<group>"; };
 		144046FB2209262E00AA2E3D /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		14AD84DA2206AD1B006BFE70 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AD84DD2206AD1B006BFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +46,7 @@
 		14AD84F72206AFD2006BFE70 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		14AD84FA2206B5EF006BFE70 /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
 		14AD84FD2206B6A1006BFE70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		14AD85002206C26F006BFE70 /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		14AD85002206C26F006BFE70 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		14AD85022206C659006BFE70 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		14DC3C252207995000AA8399 /* FadeEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledButton.swift; sourceTree = "<group>"; };
 		14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +54,7 @@
 		14DC3C2B22079DCD00AA8399 /* StarshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewController.swift; sourceTree = "<group>"; };
 		14DC3C2D22079DD800AA8399 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		14DC3C2F2207B33900AA8399 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
-		14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
 		14DC3C332207C53800AA8399 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
-		14DC3C352207C68200AA8399 /* VehicleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAPI.swift; sourceTree = "<group>"; };
 		18CCD806CE2383AE512B05A0 /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
 		6F0FF8A2113C1FA95C74CC11 /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CC14574AECFA66B2C615E2 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,10 +170,7 @@
 		14AD84FF2206C253006BFE70 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				14AD85002206C26F006BFE70 /* PersonAPI.swift */,
-				14DC3C312207B3A400AA8399 /* HomeworldAPI.swift */,
-				14DC3C352207C68200AA8399 /* VehicleAPI.swift */,
-				144046F922091D5D00AA2E3D /* StarshipAPI.swift */,
+				14AD85002206C26F006BFE70 /* Interactor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -319,11 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DC3C2A22079DC400AA8399 /* VehiclesViewController.swift in Sources */,
-				14DC3C362207C68200AA8399 /* VehicleAPI.swift in Sources */,
-				14DC3C322207B3A400AA8399 /* HomeworldAPI.swift in Sources */,
 				14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */,
 				14AD85032206C659006BFE70 /* Person.swift in Sources */,
-				144046FA22091D5D00AA2E3D /* StarshipAPI.swift in Sources */,
 				14DC3C342207C53800AA8399 /* Vehicle.swift in Sources */,
 				144046FC2209262E00AA2E3D /* Film.swift in Sources */,
 				14DC3C2E22079DD800AA8399 /* FilmsViewController.swift in Sources */,
@@ -333,7 +321,7 @@
 				14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */,
 				14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */,
 				14DC3C302207B33900AA8399 /* Homeworld.swift in Sources */,
-				14AD85012206C26F006BFE70 /* PersonAPI.swift in Sources */,
+				14AD85012206C26F006BFE70 /* Interactor.swift in Sources */,
 				14DC3C2C22079DCE00AA8399 /* StarshipsViewController.swift in Sources */,
 				14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */,
 			);

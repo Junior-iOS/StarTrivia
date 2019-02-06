@@ -24,7 +24,7 @@ class StarshipsViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: UIButton!
     
     var person: Person!
-    let api = StarshipAPI()
+    var api = Interactor<Starship>()
     var starships = [String]()
     var currentStarship = 0
 
@@ -44,7 +44,8 @@ class StarshipsViewController: UIViewController, PersonProtocol {
     }
     
     func getStarship(url: String) {
-        api.fetchStarship(url: url) { (starship) in
+        guard let url = URL(string: url) else { return }
+        api.fetchModel(url: url) { (starship) in
             if let starship = starship {
                 self.setupView(starship: starship)
             }

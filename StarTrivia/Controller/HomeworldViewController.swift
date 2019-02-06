@@ -16,7 +16,7 @@ class HomeworldViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var lblPopulation: UILabel!
     
     var person: Person!
-    var homeworldAPI = HomeworldAPI()
+    var api = Interactor<Homeworld>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class HomeworldViewController: UIViewController, PersonProtocol {
     
     func setupView() {
         guard let url = URL(string: person.homeWorldUrl) else { return }
-        homeworldAPI.fetchHomeworld(homeworldUrl: url) { (homeworld) in
+        api.fetchModel(url: url) { (homeworld) in
             if let homeworld = homeworld {
                 self.setupHomeworld(homeworld: homeworld)
             }

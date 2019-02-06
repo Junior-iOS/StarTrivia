@@ -11,7 +11,7 @@ import Foundation
 struct Film: Codable {
     
     let title: String
-    let episode: String
+    let episode: Int
     let opening: String
     let director: String
     let producer: String

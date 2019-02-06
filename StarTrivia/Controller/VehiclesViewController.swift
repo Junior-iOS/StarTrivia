@@ -24,7 +24,7 @@ class VehiclesViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: UIButton!
     
     var person: Person!
-    let api = VehicleAPI()
+    var api = Interactor<Vehicle>()
     var vehicles = [String]()
     var currentVehicle = 0
 
@@ -44,7 +44,8 @@ class VehiclesViewController: UIViewController, PersonProtocol {
     }
     
     func getVehicle(url: String) {
-        api.fetchVehicle(url: url) { (vehicle) in
+        guard let url = URL(string: url) else { return }
+        api.fetchModel(url: url) { (vehicle) in
             if let vehicle = vehicle {
                 self.setupView(vehicle: vehicle)
             }

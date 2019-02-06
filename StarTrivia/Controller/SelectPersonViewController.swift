@@ -26,12 +26,14 @@ class SelectPersonViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnSpaceship: UIButton!
     @IBOutlet weak var btnFilm: UIButton!
     
-    var personAPI = PersonAPI()
+    var api = Interactor<Person>()
     var person: Person!
 
     @IBAction func randomPressed(_ sender: BlackBackgroundButton) {
         let random = Int.random(in: 1 ... 87)
-        personAPI.fetchRandomPerson(id: random) { (person) in
+        guard let url = URL(string: PERSON_URL) else { return }
+        
+        api.fetchModel(url: url, id: random) { (person) in
             if let person = person {
                 self.setupView(person: person)
                 self.person = person
