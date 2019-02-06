@@ -47,12 +47,12 @@ class VehiclesViewController: UIViewController, PersonProtocol {
         guard let url = URL(string: url) else { return }
         api.fetchModel(url: url) { (vehicle) in
             if let vehicle = vehicle {
-                self.setupView(vehicle: vehicle)
+                self.setupView(with: vehicle)
             }
         }
     }
     
-    fileprivate func setupView(vehicle: Vehicle) {
+    fileprivate func setupView(with vehicle: Vehicle) {
         lblname.text = vehicle.name
         lblModel.text = vehicle.model
         lblManufacturer.text = vehicle.manufacturer

@@ -28,12 +28,12 @@ class HomeworldViewController: UIViewController, PersonProtocol {
         guard let url = URL(string: person.homeWorldUrl) else { return }
         api.fetchModel(url: url) { (homeworld) in
             if let homeworld = homeworld {
-                self.setupHomeworld(homeworld: homeworld)
+                self.setupHomeworld(with: homeworld)
             }
         }
     }
     
-    func setupHomeworld(homeworld: Homeworld) {
+    func setupHomeworld(with homeworld: Homeworld) {
         lblName.text = homeworld.name
         lblClimate.text = homeworld.climate
         lblTerrain.text = homeworld.terrain

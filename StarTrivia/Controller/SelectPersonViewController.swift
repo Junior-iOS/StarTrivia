@@ -35,13 +35,13 @@ class SelectPersonViewController: UIViewController, PersonProtocol {
         
         api.fetchModel(url: url, id: random) { (person) in
             if let person = person {
-                self.setupView(person: person)
+                self.setupView(with: person)
                 self.person = person
             }
         }
     }
     
-    func setupView(person: Person) {
+    func setupView(with person: Person) {
         lblName.text = person.name
         lblHeight.text = person.height
         lblMass.text = person.mass

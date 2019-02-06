@@ -104,7 +104,7 @@ class Interactor<S> where S: Decodable {
 //        task.resume()
 //    }
 //
-    // MARK: PARSINT WITH SWIFTYJSON
+    // MARK: PARSING WITH SWIFTYJSON
 //    private func parsePersonWithSwiftyJson(json: JSON) -> Person {
 //        let name = json["name"].stringValue
 //        let height = json["height"].stringValue

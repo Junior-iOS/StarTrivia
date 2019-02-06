@@ -47,12 +47,12 @@ class StarshipsViewController: UIViewController, PersonProtocol {
         guard let url = URL(string: url) else { return }
         api.fetchModel(url: url) { (starship) in
             if let starship = starship {
-                self.setupView(starship: starship)
+                self.setupView(with: starship)
             }
         }
     }
     
-    fileprivate func setupView(starship: Starship) {
+    fileprivate func setupView(with starship: Starship) {
         lblname.text = starship.name
         lblModel.text = starship.model
         lblManufacturer.text = starship.manufacturer
