@@ -37,6 +37,7 @@ class SelectPersonViewController: UIViewController, PersonProtocol {
             if let person = person {
                 self.setupView(with: person)
                 self.person = person
+                ActivityIndicator.stop()
             }
         }
     }

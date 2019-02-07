@@ -45,6 +45,7 @@ class FilmsViewController: UIViewController, PersonProtocol {
         api.fetchModel(url: url) { (film) in
             if let film = film {
                 self.setupView(with: film)
+                ActivityIndicator.stop()
             }
         }
     }

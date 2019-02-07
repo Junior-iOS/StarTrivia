@@ -24,10 +24,12 @@ class Interactor<S> where S: Decodable {
             urlString = URL(string: "\(url)")
         }
 
+        ActivityIndicator.start()
         Alamofire.request(urlString!).responseJSON { (response) in
             if let error = response.result.error {
                 debugPrint(error.localizedDescription)
                 completion(nil)
+                ActivityIndicator.stop()
                 return
             }
             guard let data = response.data else { return completion(nil) }
@@ -37,6 +39,7 @@ class Interactor<S> where S: Decodable {
             } catch {
                 debugPrint(error.localizedDescription)
                 completion(nil)
+                ActivityIndicator.stop()
             }
         }
     }

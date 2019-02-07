@@ -48,6 +48,7 @@ class VehiclesViewController: UIViewController, PersonProtocol {
         api.fetchModel(url: url) { (vehicle) in
             if let vehicle = vehicle {
                 self.setupView(with: vehicle)
+                ActivityIndicator.stop()
             }
         }
     }

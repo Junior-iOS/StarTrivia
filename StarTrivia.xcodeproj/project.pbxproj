@@ -21,6 +21,7 @@
 		14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD84FD2206B6A1006BFE70 /* Constants.swift */; };
 		14AD85012206C26F006BFE70 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85002206C26F006BFE70 /* Interactor.swift */; };
 		14AD85032206C659006BFE70 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AD85022206C659006BFE70 /* Person.swift */; };
+		14C69B2B220BC71A0058011C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C69B2A220BC71A0058011C /* ActivityIndicator.swift */; };
 		14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C252207995000AA8399 /* FadeEnabledButton.swift */; };
 		14DC3C2822079DBA00AA8399 /* HomeworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */; };
 		14DC3C2A22079DC400AA8399 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC3C2922079DC400AA8399 /* VehiclesViewController.swift */; };
@@ -48,6 +49,7 @@
 		14AD84FD2206B6A1006BFE70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14AD85002206C26F006BFE70 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		14AD85022206C659006BFE70 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		14C69B2A220BC71A0058011C /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		14DC3C252207995000AA8399 /* FadeEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledButton.swift; sourceTree = "<group>"; };
 		14DC3C2722079DBA00AA8399 /* HomeworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldViewController.swift; sourceTree = "<group>"; };
 		14DC3C2922079DC400AA8399 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		14AD84FC2206B68C006BFE70 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				14C69B2A220BC71A0058011C /* ActivityIndicator.swift */,
 				14AD84FD2206B6A1006BFE70 /* Constants.swift */,
 			);
 			path = Utils;
@@ -272,11 +275,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StarTrivia/Pods-StarTrivia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +326,7 @@
 				14AD84FB2206B5EF006BFE70 /* BlackBackgroundView.swift in Sources */,
 				14DC3C262207995000AA8399 /* FadeEnabledButton.swift in Sources */,
 				14DC3C302207B33900AA8399 /* Homeworld.swift in Sources */,
+				14C69B2B220BC71A0058011C /* ActivityIndicator.swift in Sources */,
 				14AD85012206C26F006BFE70 /* Interactor.swift in Sources */,
 				14DC3C2C22079DCE00AA8399 /* StarshipsViewController.swift in Sources */,
 				14AD84FE2206B6A1006BFE70 /* Constants.swift in Sources */,
@@ -480,7 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.njdevelopment.StarTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -499,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.njdevelopment.StarTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

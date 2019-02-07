@@ -48,6 +48,7 @@ class StarshipsViewController: UIViewController, PersonProtocol {
         api.fetchModel(url: url) { (starship) in
             if let starship = starship {
                 self.setupView(with: starship)
+                ActivityIndicator.stop()
             }
         }
     }

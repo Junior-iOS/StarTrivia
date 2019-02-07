@@ -29,6 +29,7 @@ class HomeworldViewController: UIViewController, PersonProtocol {
         api.fetchModel(url: url) { (homeworld) in
             if let homeworld = homeworld {
                 self.setupHomeworld(with: homeworld)
+                ActivityIndicator.stop()
             }
         }
     }
