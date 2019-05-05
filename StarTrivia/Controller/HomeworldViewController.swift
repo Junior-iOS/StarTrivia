@@ -16,7 +16,7 @@ class HomeworldViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var lblPopulation: UILabel!
     
     var person: Person!
-    var api = Interactor<Homeworld>()
+    var api = Service<Homeworld>()
     
     override func viewDidLoad() {
         super.viewDidLoad()

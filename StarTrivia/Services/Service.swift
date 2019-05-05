@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Interactor<S> where S: Decodable {
+class Service<S> where S: Decodable {
     
     typealias Model = S
     
@@ -24,22 +24,25 @@ class Interactor<S> where S: Decodable {
             urlString = URL(string: "\(url)")
         }
 
-        ActivityIndicator.start()
-        Alamofire.request(urlString!).responseJSON { (response) in
-            if let error = response.result.error {
-                debugPrint(error.localizedDescription)
-                completion(nil)
-                ActivityIndicator.stop()
-                return
-            }
-            guard let data = response.data else { return completion(nil) }
-            do {
-                let model = try JSONDecoder().decode(Model.self, from: data)
-                completion(model)
-            } catch {
-                debugPrint(error.localizedDescription)
-                completion(nil)
-                ActivityIndicator.stop()
+        if let url = urlString {
+            ActivityIndicator.start()
+            
+            Alamofire.request(url).responseJSON { (response) in
+                if let error = response.result.error {
+                    debugPrint(error.localizedDescription)
+                    completion(nil)
+                    ActivityIndicator.stop()
+                    return
+                }
+                guard let data = response.data else { return completion(nil) }
+                do {
+                    let model = try JSONDecoder().decode(Model.self, from: data)
+                    completion(model)
+                } catch {
+                    debugPrint(error.localizedDescription)
+                    completion(nil)
+                    ActivityIndicator.stop()
+                }
             }
         }
     }

@@ -21,7 +21,7 @@ class FilmsViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: FadeEnabledButton!
     
     var person: Person!
-    var api = Interactor<Film>()
+    var api = Service<Film>()
     var films = [String]()
     var currentFilm = 0
     

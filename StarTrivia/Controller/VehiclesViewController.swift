@@ -24,7 +24,7 @@ class VehiclesViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: UIButton!
     
     var person: Person!
-    var api = Interactor<Vehicle>()
+    var api = Service<Vehicle>()
     var vehicles = [String]()
     var currentVehicle = 0
 

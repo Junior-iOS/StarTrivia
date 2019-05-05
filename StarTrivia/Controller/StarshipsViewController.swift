@@ -24,7 +24,7 @@ class StarshipsViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnNext: UIButton!
     
     var person: Person!
-    var api = Interactor<Starship>()
+    var api = Service<Starship>()
     var starships = [String]()
     var currentStarship = 0
 

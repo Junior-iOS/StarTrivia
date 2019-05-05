@@ -26,7 +26,7 @@ class SelectPersonViewController: UIViewController, PersonProtocol {
     @IBOutlet weak var btnSpaceship: UIButton!
     @IBOutlet weak var btnFilm: UIButton!
     
-    var api = Interactor<Person>()
+    var api = Service<Person>()
     var person: Person!
 
     @IBAction func randomPressed(_ sender: BlackBackgroundButton) {
